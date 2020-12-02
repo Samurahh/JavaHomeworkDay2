@@ -7,6 +7,7 @@ public class Homework {
         if(string.isBlank() || string.isEmpty()){
             return false;
         }else{
+            string = string.toLowerCase();
             char[] chars = string.toCharArray();
             for(int i=0;i<(chars.length)/2;i++){
                 if(chars[i] != chars[(chars.length-1)-i]){
@@ -21,6 +22,7 @@ public class Homework {
         if(string.isBlank() || string.isEmpty()) {
             return null;
         }else{
+            string = string.toLowerCase();
             String longestPalindrome = "";
             leftPointer:for(int i = 0;i<string.length()-1;i++){
                 if(longestPalindrome.length() > string.length() - i){
