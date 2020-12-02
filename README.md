@@ -6,7 +6,6 @@ We were asked to write methods that will:
 2. Take in a String parameter and return the longest palindrome ("ananbvcvbape" -> "bvcvb")
 
 
-//Methods
 public static boolean checkPalindrome(String string);
 
 public static String getLongestPalindrome(String string);
