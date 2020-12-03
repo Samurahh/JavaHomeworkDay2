@@ -1,8 +1,10 @@
 package com.spartaglobal;
 
+import java.util.Set;
+
 /*** Palindrome ***/
 
-public class Homework {
+public class Palindrome {
     public static boolean checkPalindrome(String string){
         if(string.isBlank() || string.isEmpty()){
             return false;
@@ -22,7 +24,7 @@ public class Homework {
         if(string.isBlank() || string.isEmpty()) {
             return null;
         }else{
-            string = string.toLowerCase();
+            string = string.toLowerCase().strip();
             String longestPalindrome = "";
             leftPointer:for(int i = 0;i<string.length()-1;i++){
                 if(longestPalindrome.length() > string.length() - i){
